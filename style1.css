@@ -122,3 +122,23 @@ html {
     bottom: 0;
     z-index: 10;
   }
+
+  .mute-button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #42005f;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #9b00cc;
+  }
+  
+  .mute-button:hover {
+    background-color: #dd45ff;
+  }
