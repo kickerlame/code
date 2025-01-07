@@ -1,0 +1,124 @@
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+  }
+
+html {
+  height: 100%;
+}
+
+  .header {
+    padding: 30px;
+    height: 80px;
+    text-align: center;
+    color: #ddd;
+    background-color: #42005f;
+    background-image: url('finire.jpg');
+    position: static;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #dd45ff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+  }
+  
+  
+  .topnav a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: normal;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+ 
+  .topnav a:hover {
+    background-color: #42005f;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #9b00cc; 
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #9b00cc; 
+  }
+
+  .topnav a.active {
+    background-color: #42005f; 
+    color: #ffffff; 
+    font-weight: bold; 
+    box-shadow: 0 0 10px #ff6fff, 0 0 20px #ff6fff, 0 0 0px #ff6fff; 
+    text-shadow: 0 0 10px #ff6fff, 0 0 20px #ff6fff, 0 0 40px #ff6fff; 
+  }
+
+  .cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #7f009b;
+    border-radius: 50%;
+    position: fixed; 
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation: cursorAnim 1s infinite ease-in-out;
+    z-index: 1000;
+    box-shadow: 0 0 10px #dd45ff, 0 0 20px #dd45ff, 0 0 30px #dd45ff;
+}
+
+@keyframes cursorAnim {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 0.6;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+  }
+
+  .content {
+    padding: 10px;
+    padding-bottom: 10px;
+    height: 12; 
+    position: relative; 
+    overflow: hidden; 
+    color: #000000; 
+    }
+    
+    .content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('arcaea1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.4; 
+    z-index: -1; 
+    }
+  
+  .footer {
+    background-color: #dd45ff;
+    padding: 5px;
+    text-align: center;
+    color: #ffffff;
+    bottom: 0;
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+  }

@@ -1,0 +1,21 @@
+.contact-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contact-container img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.contact-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-info {
+    font-size: 18px;
+    margin-top: 15px;
+}
